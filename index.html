@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<link 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weathering with you</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="video-container">
+    <video muted autoplay loop>
+        <source src="cloud2.mp4" type="video/mp4"/>
+    </video>
+
+    <!--User input and Weather Display -->
+    <div id="display">
+        <h1>Weathering with You</h1>
+        <div class ="search">
+            <input type="text" id="cityIn"
+            name="cityIn" placeholder="Enter City name e.g. London..."><br><br>
+            <button id="mySubmit" onclick="fetchWeather()">Search</button>
+        </div>
+        <div class="result">
+            <h2 id="cityDisplay"></h2>
+            <p id="dateDisplay"></p>
+            <img id="iconDisplay" alt="weather icon" >
+            <p id="weatherDisplay"></p>
+            <p id="tempDisplay"></p>
+            <p id="humDisplay"></p>
+        </div>
+        <div id="fcast">
+           
+        </div>
+
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
